@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 // import localFont from 'next/font/local';
-import { Inter } from "next/font/google";
+import { Inter } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from 'next-themes';
-const inter = Inter({ subsets: ["latin"] });
+// import { ModeToggle } from '@/components/Toggle';
+const inter = Inter({ subsets: ['latin'] });
 // const geistSans = localFont({
 //   src: './fonts/GeistVF.woff',
 //   variable: '--font-geist-sans',
@@ -27,17 +28,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={inter.className}
-      >
-       <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            {children}
-          </ThemeProvider>
+      <body className={inter.className}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem={false}
+          disableTransitionOnChange
+        >
+          <div className="absolute bottom-5 right-0 text-white"></div>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
