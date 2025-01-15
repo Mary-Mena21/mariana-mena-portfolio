@@ -38,3 +38,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+//Vercel Deployment Error: Command "npm run build" exited with 1
+//https://stackoverflow.com/questions/66840942/vercel-deployment-error-command-npm-run-build-exited-with-1/79255988#79255988
+//https://www.youtube.com/watch?v=FTH6Dn3AyIQ
+//https://ui.aceternity.com/components
+//https://sentry.io/welcome/?utm_source=jsmastery&utm_medium=paid-community&utm_campaign=perf-fy25q1-videointegrations&utm_content=video-jsmasteryreactvideo1-na
